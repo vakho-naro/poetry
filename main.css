@@ -1,0 +1,289 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    position: relative;
+    background: #2b5876;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "edita", serif;
+}
+
+.wrapper {
+    max-width: 1370px;
+    width: calc(100% - 12%);
+    height: auto;
+    margin: 0 auto; 
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.center {
+    align-items: center;
+}
+
+.j-center {
+    justify-content: center
+}
+
+.column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    width: 110px;
+    height: 70px;
+    margin-top: 5px;
+}
+
+/* NAVIGATION */
+
+.header__navigation {
+    background-color: #002533c7;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header__navigation__left {
+    height: 80px;
+}
+
+.header__navigation__ul {
+    list-style-type: none;
+}
+
+.header__navigation__link {
+    color: #fff;
+    font-size: 1.3rem;
+    text-transform: uppercase;   
+    padding: 29px 20px;  
+    text-decoration: none;
+    line-height: 80px;
+}
+
+.header__navigation__link:hover {
+    background-color: #001821;
+}
+
+/* DROPDOWN */
+
+.nav__dropbutton {
+    background-color: #fff;
+    color: #000;
+    padding-top: 2px;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .nav__dropdown {
+    position: relative;
+    display: none;
+  }
+  
+  .nav__dropdown--content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    right: -30px;
+    top: 47px;
+    box-shadow: 0px 8px 16px 0px #00000033;
+    z-index: 1;
+  }
+  
+  .nav__dropdown--content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .nav__dropdown a:hover {background-color: #e7e7e7;}
+  
+  .show {
+      display: block;
+}
+
+/* ASIDE */
+
+.aside {
+    width: 30%;
+    height: 500px;
+    position: fixed;
+    z-index: 1;
+    margin-left: 12%;
+    /* background-color: #317461; */
+}
+
+.aside img {
+    width: 200px;
+    margin: 20px 0;
+  }
+
+.aside p {
+  padding: 0 12%;
+}
+
+/* MAIN */
+
+.main {
+   
+    margin-left: 50%;
+}
+
+.section__header {
+    margin: 80px 0 30px 0;
+    text-transform: uppercase;   
+}
+
+/* SERVICES */
+
+#myUL {
+    list-style-type: none;
+    margin-bottom: 100px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 15px 0 20px 0;
+}
+
+li {
+    margin-top: 5px;
+}
+
+.caret {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+}
+
+.caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.caret-down::before {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);  
+}
+
+.nested {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+
+/* CONTACT */
+
+.contact {
+    background-color: #005e84;
+    color: #fff;
+}
+
+.contact__header {
+    margin: 45px 0 50px 0;
+    text-transform: uppercase;   
+}
+
+.contact__container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.contact__container__elements {
+    margin: 0;
+    width: 25%;
+    border-right: 1px solid black;
+}
+
+.contact__container__elements h5 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.social-media {
+    border: none;
+}
+
+.contact__mobile {
+    padding-bottom: 20px;
+}
+
+.contact__p {
+    padding:  5px;
+    font-size: 1.2rem;
+}
+
+.contact__p i{
+    color: #aecbda;
+    margin-right: 10px;
+}
+
+.contact__p a{
+    text-decoration: none;
+    color: #aecbda;
+    cursor: pointer;
+}
+
+.contact__p a:hover {
+    text-decoration: underline;
+
+}
+
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    height: 70px;
+    background-color: #2b2b23;
+}
+
+.footer__text {
+    color: #afafaf;
+    font-size: 1.1rem;
+}
