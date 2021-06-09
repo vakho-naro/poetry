@@ -27,10 +27,21 @@
 }
 
 @media  (max-width: 900px)  {
-    .logo {
-        width: 90px;
-        height: 60px;
-        margin-top: 10px;
+
+    .aside {
+        width: 100%;
+        height: 500px;
+        position:static;
+        z-index: 1;
+        margin-left: 0;
+    }
+
+    .main {
+        margin: 0 auto;
+    }
+
+    .section__header {
+        text-align: center;
     }
 
     .header__navigation__link {
