@@ -1,31 +1,3 @@
-@media  (max-width: 1150px)  {
-    .header__navigation__link {
-        font-size: 1.2rem;
-        padding:  30px 12px 28px;  
-    }
-
-    .contact__container__elements--soc {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-    }
-
-}
-
-@media  (max-width: 1050px)  {
-    .contact__container__elements h5 {
-        font-size: 1.2rem;
-        margin-bottom: 20px
-    }
-
-    .contact__p {
-        padding:  5px;
-        font-size: 1rem;
-    }
-
-}
-
 @media  (max-width: 900px)  {
 
     .aside {
@@ -59,15 +31,6 @@
         height: 70px;
         font-size: 1.4rem
     }
-
-    .contact__p {
-        font-size: 0.7rem;
-    }
-
-    .contact__container__elements h5 {
-        font-size: 1rem;
-    }
-
 }
 
 
