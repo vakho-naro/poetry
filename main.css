@@ -4,9 +4,12 @@ html {
 
 body {
     position: relative;
-    background: #2b5876;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: #2b5876; 
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  
+    background: linear-gradient(to right, #4e4376, #2b5876);  */
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     color: white;
     min-height: 1000px;
 }
@@ -102,17 +105,35 @@ body {
 /* ASIDE */
 
 .aside {
-    width: 30%;
+    width: 48%;
     height: 500px;
     position: fixed;
     z-index: 1;
-    margin-left: 12%;
+    padding-left: 2%;
     /* background-color: #317461; */
 }
 
+.aside_i {
+    font-size: 40px;
+}
+
+.aside_i a{
+    font-size: 40px;
+    color: white;
+}
+
+.img__container {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 230px;
+    margin: 38px 0 12px 0;
+}
+
 .aside img {
-    width: 200px;
-    margin: 20px 0;
+    width: 70%;
+   
   }
 
 .aside p {
@@ -129,6 +150,7 @@ body {
 .section__header {
     margin: 80px 0 30px 0;
     text-transform: uppercase;   
+    text-align: center;
 }
 
 /* poems */
@@ -153,6 +175,7 @@ li {
     -moz-user-select: none; /* Firefox 2+ */
     -ms-user-select: none; /* IE 10+ */
     user-select: none;
+    color: #d7cece;
 }
 
 .caret::before {
@@ -174,7 +197,7 @@ li {
 
 .active {
     display: block;
-    color: #d7cece;
+    
 }
 
 /* FOOTER */
@@ -191,3 +214,9 @@ li {
     color: #afafaf;
     font-size: 1.1rem;
 }
+
+/* social */
+/* .fa-facebook-square {
+    color: #3B5998;
+  }
+   */
