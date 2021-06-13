@@ -109,12 +109,8 @@ body {
     height: 500px;
     position: fixed;
     z-index: 1;
-    padding-left: 2%;
+    padding: 0 2%;
     /* background-color: #317461; */
-}
-
-.aside_i {
-    font-size: 40px;
 }
 
 .aside_i a{
@@ -133,7 +129,6 @@ body {
 
 .aside img {
     width: 70%;
-   
   }
 
 .aside p {
